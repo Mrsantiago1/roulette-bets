@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Roulette</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <h1 class="playerBank"></h1>
+      <a href="/login">LOGIN</a>
+    </section> <canvas id="canvas" ></canvas>
+    <form action="/messages" method="POST">
+      <fieldset>
+        <legend>User Place Your Bet:</legend>
+        <input type="text" name="name" placeholder="First name:">
+        <select id="betInput">
+       <option name="bet" value="$100">$100</option>
+       <option name="bet" value="$200">$200</option>
+       <option name="bet" value="$500">$500</option>
+       <option name="bet" class="allIn" value="All">All</option>
+    </select class="bet">
+        <button class="r">red</button>
+        <button class="g">green</button>
+        <button class="b">black</button>
+      </fieldset>
+    </form>
+  </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
